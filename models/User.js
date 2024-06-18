@@ -9,12 +9,18 @@ const User = new mongoose.Schema({
             type: String,
             required: true,
             unique: true,
+        },userRole:{
+            type: String,
+            require:true,
         },
         passwordHash: {
             type: String,
             required: true,
         },
-
+        detail:{//burada kullanıcının verileri saklanmaktadır
+            type:String,
+            required:false,
+        }
     },
     {
         timestamps: true,
