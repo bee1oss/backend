@@ -1,0 +1,52 @@
+$blue: #4361ee;
+
+.root {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1px;
+  position: relative;
+
+  &:hover {
+    border: 1px solid $blue;
+    box-shadow: 0 0 0 1px $blue;
+
+    .editButtons {
+      opacity: 1;
+    }
+  }
+
+  &Full {
+    &:hover {
+      background-color: #fff;
+      border: 1px solid #dedede;
+      box-shadow: none;
+    }
+  }
+}
+
+.wrapper {
+  padding: 1px 2px 2px;
+}
+
+
+.skeleton {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+
+.editButtons {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+}
+
